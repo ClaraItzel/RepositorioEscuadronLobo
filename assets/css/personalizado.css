@@ -8,6 +8,10 @@
     --titulo: 'DM Serif Display', serif;
 }
 
+/* html{ 
+    overflow: none;
+} */
+
 .contenedor-logo{
     /* position: absolute; */
     min-width: 300px;
@@ -29,7 +33,7 @@ a{
     /* font-size: 20px; */
 }
 .btn{
-    width: 150px;
+    width: 130px;
     height: 40px;
     border: 3px groove var(--blanco);
     font-family: 'Cormorant Garond', serif;
@@ -333,6 +337,7 @@ div#div-h6 h2{
 .div-h3{
     width: 610;
     height:330px;
+    margin-left: -5px;
     position: absolute;
     visibility: hidden;
     

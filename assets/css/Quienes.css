@@ -1,0 +1,34 @@
+/* Fuentes */
+:root{
+  --fuenteHeading: 'DM Serif Display', serif;
+  --fuenteParrafo: 'Cormorant Garamond', serif;
+}
+
+body{
+  font-family: var(--fuenteParrafo);
+  font-size: 1.5rem;
+  background-color: #f4f4f2;
+  
+}.bg-azul{
+    /*background-color: #037e8cce;*/
+    background-image: linear-gradient(#037e8cce,#13C0E5,#f4f4f2);
+  }
+  
+  .bg-azulclaro{
+  
+    background-color: #13C0E5;;
+  }
+  
+  .txtBlanco{
+    color:#f4f4f2;
+  }
+  
+  .txtNegro{
+    color: #000000;
+  }
+  
+  .bg-claro{
+  
+    background-image: linear-gradient(#f4f4f2, #13C0E5,#037e8cce);
+  }
+  

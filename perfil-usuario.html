@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil de Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/personalizado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Afregamos el logo con el boton de cerrar sesion -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button  fondo-nav bg-secondary">
+
+        <div class="container contenedor-logo">
+
+            <img src="assets/img/logo.png" class="logo">
+
+            <a class="btn" id="btn-inicio" role="button" href="#">Cerrar sesion
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- Menu de perfil del usuario -->
+    <!-- <section class=" section-menu"> -->
+    <div class="div-menu">
+
+        <div class="menu">
+            <ul class="lista-menu">
+                <li><a class="a-list href =" #" id="info-perso">Informacion Personal</a></li>
+                <li><a class="a-list href =" #" id="view-cv">Ver CV</a></li>
+                <li><a class="a-list href =" #" id="proyects">Proyectos</a></li>
+                <li><a class="a-list href =" #" id="contact">Contacto</a></li>
+                <li><a class="a-list href =" #" id="course">Cursos y Certificaciones</a></li>
+            </ul>
+        </div>
+
+        <div clas="div-imgUsuaio" style="width: 300px; height: 450px; margin-left: 60px; box-shadow: 0 0 15px 2px #000000; margin-top: 15px;
+                                            border-radius: 10px; background: #13C0E5">
+
+            <img src="./assets/img/usuario.jpg" alt="" class="img-perfil">
+
+            <h6 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam non ipsa vel id impedit
+                velit nisi atque
+                suscipit hic natus, adipisci fuga ullam, cumque reiciendis eum, vitae quia quae labore.</h6>
+        </div>
+
+        <!-- <div class="card"  style="width: 300px; height: 450px; margin-left: 60px;margin-top: 15px;
+        border-radius: 10px;">
+            <img src="assets/img/usuario.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div> -->
+
+        <div class="div-info" id="info-personal">
+
+            <div class = "div-hijo-info">
+
+                <div class="card informacion" style="width: 350px; height:60px;  margin-right: 10px; margin-left: 10px">
+                    <h5 class="card-title  text-center" >Nombre</h5>
+                    <p class="card-text parrafo-info" style = "margin-left:85px;">Marco Linares Hernandez</p>
+                </div>
+                
+                <div class="card informacion" style="width: 350px; height:60px; margin-top: 10px;">
+                    <h5 class="card-title  text-center" >Edad</h5>
+                    <p class="card-text parrafo-info" style = "margin-left:150px;">25 años</p>
+                </div>
+                
+                <div class="card informacion" style="width: 350px; height:60px; margin-top: 10px; margin-right: 10px; margin-left: 10px;">
+                    <h5 class="card-title  text-center" >Grado Aadémico</h5>
+                    <p class="card-text parrafo-info" style = "margin-left:130px;">Universidad</p>
+                </div>
+                
+                <div class="card informacion" style="width: 350px; height:60px; margin-top: 10px;">
+                    <h5 class="card-title  text-center" >Escuela</h5>
+                    <p class="card-text parrafo-info" style = "margin-left:0px;">Universidad Autónoma de la Ciudad de México</p>
+                </div>
+                
+                <div class="card informacion" style="width: 350px; height:60px; margin-top: 10px; margin-right: 10px; margin-left: 10px;">
+                    <h5 class="card-title  text-center" >Ciudad / Estado</h5>
+                    <p class="card-text parrafo-info" style = "margin-left:105px;">Ciudad de México</p>
+                </div>
+                
+                <div class="card informacion" style="width: 350px; height:60px; margin-top: 10px;">
+                    <h5 class="card-title  text-center" >Trabajo actual o Ultimo</h5>
+                    <p class="card-text parrafo-info" style = "margin-left:70px;">Soluciones Software y tecnología</p>
+                </div>
+                
+            </div>
+                
+            </div>
+            
+        <!-- Mostramos CV -->
+        <div class="cv" id="cv">
+            <iframe src="prueba.pdf" class="pdf"></iframe>
+        </div>
+
+        <!-- Carrucel para royectos -->
+
+
+
+        <!-- Contacto -->
+
+
+
+        <div class="card text-center div-contacto" id="contacto" style = "width: 400px; height: 400px; margin-left: 590px" >
+            <div class="card-header">
+              <h3 style = "font-family: 'DM Serif Display', serif;">Contacto</h3>
+            </div>
+            <div class="card-body">
+                <p class="p-contact">
+
+                    <label><img src="./assets/img/whatsapp.png" class="image whats"><a href="#">55-12-78-69-54</a></label>
+                </p>
+    
+                <p class="p-contact">
+                    <label><img src="./assets/img/github.png" class="image git"><a href="https://github.com/Marco-9419"
+                            class="a-contact">GitHub</a></label>
+                </p>
+    
+                <p class="p-contact">
+                    <label><img src="./assets/img/linkedin.png" class="image linkedin"><a
+                            href="https://www.linkedin.com/in/marco-antonio-linares-hern%C3%A1ndez-299921208/"
+                            class="a-contact">Linkedin</a></label>
+                </p>
+                
+
+              <a href="#" class="btn btn-primary">Mandar mensaje</a>
+            </div>
+            <div class="card-footer text-muted">
+              
+            </div>
+          </div>
+
+
+
+
+          <!-- Proyectos -->
+        <div class="div-proyectos" id="cursos">
+
+            <div class="div-hijo">
+                <h3>Bootcamp Full Stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita minus omnis eum facere
+                    impedit voluptas quis consequuntur architecto temporibus eos provident, dignissimos rerum animi
+                    asperiores itaque error quam perferendis!</p>
+            </div>
+            <div class="div-hijo">
+                <h3>Udemy Java</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita minus omnis eum facere
+                    impedit voluptas quis consequuntur architecto temporibus eos provident, dignissimos rerum animi
+                    asperiores itaque error quam perferendis!</p>
+            </div>
+            <div class="div-hijo">
+                <h3>Facilax Phyton</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita minus omnis eum facere
+                    impedit voluptas quis consequuntur architecto temporibus eos provident, dignissimos rerum animi
+                    asperiores itaque error quam perferendis!</p>
+            </div>
+            <div class="div-hijo">
+                <h3>Bootcamp Full Stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita minus omnis eum facere
+                    impedit voluptas quis consequuntur architecto temporibus eos provident, dignissimos rerum animi
+                    asperiores itaque error quam perferendis!</p>
+            </div>
+            <div class="div-hijo">
+                <h3>Bootcamp Full Stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita minus omnis eum facere
+                    impedit voluptas quis consequuntur architecto temporibus eos provident, dignissimos rerum animi
+                    asperiores itaque error quam perferendis!</p>
+            </div>
+            <div class="div-hijo">
+                <h3>Bootcamp Full Stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita minus omnis eum facere
+                    impedit voluptas quis consequuntur architecto temporibus eos provident, dignissimos rerum animi
+                    asperiores itaque error quam perferendis!</p>
+            </div>
+
+        </div>
+
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade proyects" data-bs-ride="carousel">
+            <div class="carousel-inner" id="div-parrafo">
+                <div class="carousel-item active">
+                    <div class="div-h3" id="div-h6">
+                        <h2 class= "proyecto-h2" >Proyecto 1</h2>
+                        <h6 class="p-proyecto p1" id="parrafos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Labore libero autem corrupti sit amet
+                            eveniet, enim placeat! Deleniti architecto aliquam, voluptatem illum, velit minus incidunt,
+                            aperiam voluptatibus accusantium commodi blanditiis. <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe esse minima asperiores error
+                            ipsam qui voluptas incidunt pariatur doloribus quo. Laborum in vitae perspiciatis, dicta
+                            repellendus hic fuga ipsum neque? </h6>
+                    </div>
+                    <img src="assets/img/proyecto1.png" class="d-block img-proyects" id="img" alt="...">
+                </div>
+                <div class="carousel-item">
+
+                    <div class="div-h3" id="div-h6">
+                        <h2 class= "proyecto-h2" >Proyecto 2</h2>
+                        <h6 class="p-proyecto p2" id="parrafos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Labore libero autem corrupti sit amet
+                            eveniet, enim placeat! Deleniti architecto aliquam, voluptatem illum, velit minus incidunt,
+                            aperiam voluptatibus accusantium commodi blanditiis.</h6>
+                    </div>
+                    <img src="assets/img/proyecto4.jpg" class="d-block img-proyects img"   id="img" alt="...">
+                </div>
+                <div class="carousel-item">
+
+                    <div class="div-h3" id="div-h6">
+                        <h2 class= "proyecto-h2">Proyecto 3</h2>
+                        <h6 class="p-proyecto p3" id="parrafos">Hola Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Labore libero autem corrupti sit amet
+                            eveniet, enim placeat! Deleniti architecto aliquam, voluptatem illum, velit minus incidunt,
+                            aperiam voluptatibus accusantium commodi blanditiis.</h6>
+                    </div>
+                    <img src="assets/img/proyecto5.jpg" class="d-block img-proyects img"  id="img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon-back" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+
+    <!-- </section> -->
+
+
+
+
+
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

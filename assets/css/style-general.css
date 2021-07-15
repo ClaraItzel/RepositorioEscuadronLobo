@@ -1,0 +1,317 @@
+:root{
+    /* Fuentes */
+      --fuenteHeading: 'DM Serif Display', serif;
+      --fuenteParrafo: 'Cormorant Garamond', serif;
+    /*Colores*/
+    --ColorPrincipal: #037E8C;
+    --ColorSecundario: #13C0E5;
+    --ColorClaro: #f4f4f2;
+    --ColorContraste: #7EC544;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+}
+
+
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #F4F4F2 ;
+}
+@media (max-width: 768px) {
+   h1{
+       font-size: 3rem;
+   }
+}
+@media (max-width: 482px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    body{
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 375px) {
+    h1{
+        font-size: 2rem;
+    }
+    body{
+        font-size: 1rem;
+    }
+}
+.h2{
+    color: #F4F4F2;
+}
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+@media (max-width: 768px) {
+   h2{
+       font-size: 2rem;
+   }
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  h3{
+      font-size: 1rem;
+  }
+}
+h4 {
+    font-family: 'DM Serif Display', serif;
+    text-align: center
+}
+
+h5 {
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+}
+img{
+    background-size: cover;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    position: absolute;
+    width:100%;
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 270px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.logo{
+    height: 40px;
+    width: 80px;
+    background-image: url(/assets/img/logo.png);
+    background-size: cover;
+}
+.enlaces{
+    display: flex;
+    margin-right: 3rem;
+}
+.enlace__navegacion{
+    color: #F4F4F2;
+}
+.enlace__navegacion:hover{
+    color: #7EC544;
+}
+@media (max-width: 768px) {
+    .enlace__navegacion:hover{
+        color: #F4F4F2;
+        background-color: #7ec544;
+    }
+}
+.boton{
+    font-family: var(--fuenteHeading);
+    
+  }
+  .boton:hover{
+    background-color: var(--ColorContraste) !important;
+    border-color: var(--ColorContraste)!;
+    transition: 0.5s;
+  }
+  .imagen__slider1{
+      background-image: url(/assets/img/slider.jpg);
+      background-size: cover;
+  }
+  .imagen__slider2{
+    background-image: url(/assets/img/slider\ 2.jpg);
+    background-size: cover;
+}
+.imagen__slider3{
+    background-image: url(/assets/img/slider3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ajustes__carusel{
+    height: 100%; 
+    padding-top: 18%; 
+    background-color: #027c8a5d;
+}
+@media (max-width: 768px) {
+    .ajustes__carusel{
+        padding-top: 30%;
+    }
+}
+@media (max-width: 375px) {
+    .ajustes__carusel{
+        padding-top: 50%;
+    }
+}
+.box{
+    position: relative;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #002c31d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.box:hover .capa{
+    transform: scale(1);
+}
+.enlace__tarjeta{
+    font-family: var(--fuenteHeading);
+    color: white;
+}
+.enlace__tarjeta:hover{
+    color: var(--ColorContraste);
+    transition: 0.5s;
+    text-decoration: none;
+}
+.tarjetas__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 768px) {
+   .tarjetas__grid{
+       grid-template-columns: repeat(2, 1fr);
+       gap: 10px;
+   }
+}
+.animacion{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.transform-up{
+    transform: translateY(20%);
+}
+.transform-down{
+    transform: translateY(-20%);
+}
+
+.aparece{
+    opacity: 1;
+    transform: none;
+}
+/* Foro */
+.foto{
+    background-size: cover ;
+    background-image: url(/assets/img/johnDoe.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 2rem 2rem;
+    border-radius: 50%;
+    
+  }
+  .imagen{
+    background-image: url(/assets/img/johnDoe.png);
+    width: 100%;
+    height: 100%;
+  }
+  .margen-2{
+    margin: 10px 0px 40px 0; 
+  }
+  .margen-but{
+      margin-bottom: 10px; 
+    }
+  .alt{
+   background-size: cover;
+  }
+  .font-5{
+    font-size: 5rem; 
+  }
+  .padding-2{
+    padding: 2rem;
+  }
+  .imagen-fondo{
+    background-image: url("https://i.ytimg.com/vi/CH0DBCp4mvM/maxresdefault.jpg")
+  }
+ 
+  .grid2T{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .hilo{
+      border-radius: 30px;
+      background-color: var(--ColorSecundario);
+      padding: 10px;
+      text-align: center;
+      color: white;
+    background: rgba(19,192,229,1);
+    background: -moz-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,192,229,1)), color-stop(50%, rgba(98,216,252,1)), color-stop(100%, rgba(19,192,229,1)));
+    background: -webkit-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: linear-gradient(to right, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13c0e5', endColorstr='#13c0e5', GradientType=1 );
+
+  }
+  .cambio{
+      background-color: var(--ColorClaro);
+  }
+.perfil{
+  display: flex;
+  
+}
+
+.w-pixeles{
+  width: 80%;
+}
+.ubicacion{
+  font-family: var(--fuenteHeading);
+}
+.dimension{
+  width: 70%;
+  height: 9rem;
+}
+.SinDec{
+color: black !important;
+text-decoration: none !important;
+}
+.SinDec:hover{
+text-decoration: none !important;
+color: #7EC544 !important;
+transition: 0.5s;
+}
+.texto-izquierda{
+    text-align: left;
+}
+.btn__imagen-file{
+    width: 100%;
+}

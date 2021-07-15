@@ -226,3 +226,92 @@ header .textos-header{
     opacity: 1;
     transform: none;
 }
+/* Foro */
+.foto{
+    background-size: cover ;
+    background-image: url(/assets/img/johnDoe.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 2rem 2rem;
+    border-radius: 50%;
+    
+  }
+  .imagen{
+    background-image: url(/assets/img/johnDoe.png);
+    width: 100%;
+    height: 100%;
+  }
+  .margen-2{
+    margin: 10px 0px 40px 0; 
+  }
+  .margen-but{
+      margin-bottom: 10px; 
+    }
+  .alt{
+   background-size: cover;
+  }
+  .font-5{
+    font-size: 5rem; 
+  }
+  .padding-2{
+    padding: 2rem;
+  }
+  .imagen-fondo{
+    background-image: url("https://i.ytimg.com/vi/CH0DBCp4mvM/maxresdefault.jpg")
+  }
+ 
+  .grid2T{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .hilo{
+      border-radius: 30px;
+      background-color: var(--ColorSecundario);
+      padding: 10px;
+      text-align: center;
+      color: white;
+    background: rgba(19,192,229,1);
+    background: -moz-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,192,229,1)), color-stop(50%, rgba(98,216,252,1)), color-stop(100%, rgba(19,192,229,1)));
+    background: -webkit-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    background: linear-gradient(to right, rgba(19,192,229,1) 0%, rgba(98,216,252,1) 50%, rgba(19,192,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13c0e5', endColorstr='#13c0e5', GradientType=1 );
+
+  }
+  .cambio{
+      background-color: var(--ColorClaro);
+  }
+.perfil{
+  display: flex;
+  
+}
+
+.w-pixeles{
+  width: 80%;
+}
+.ubicacion{
+  font-family: var(--fuenteHeading);
+}
+.dimension{
+  width: 70%;
+  height: 9rem;
+}
+.SinDec{
+color: black !important;
+text-decoration: none !important;
+}
+.SinDec:hover{
+text-decoration: none !important;
+color: #7EC544 !important;
+transition: 0.5s;
+}
+.texto-izquierda{
+    text-align: left;
+}
+.btn__imagen-file{
+    width: 100%;
+}

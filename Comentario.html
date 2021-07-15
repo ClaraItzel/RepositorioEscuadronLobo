@@ -11,48 +11,55 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,600&family=DM+Serif+Display:ital@0;1&display=swap"
 	 rel="stylesheet">
 	<link href="/assets/css/normalice.css" rel="stylesheet" type="text/css" />
-	<link href="/assets/css/style-foro.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/css/style-general.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <!--Inicio de encabezado-->
 <header>
   <!--Aquí empieza la barra de navegación-->
-  <div>
-  <nav>
-      <img src="/assets/img/logo.png" align="left">
-      <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 20px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Mi Perfil</button>
-      <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 20px; border-radius: 60px; font-family: 'Cormorant Garamond', serif; margin-left: 15px;" >Cerrar Sesión</button>
-  </nav>
-  <section class="textos-header" style="background-image: url(/assets/img/quienes-somos2.png); height: 500px;" >
+  <header>
+    <!--Aquí empieza la barra de navegación-->
+    <div>
+      <nav class="fixed-top navbar navbar-expand-xl navbar-dark bg-dark justify-content-lg-between">
+        <a class="navbar-brand" href="index-general.html"><img src="/assets/img/logo.png" width="100" height="50" alt=""></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       
-      <h1 class="h1" style="margin-top: 80px; color: #f4f4f2;">Un lugar donde podrás formar una gran comunidad</h1>
-      <br>
-      <h2 class="h2-centrar" >Pensada por y para desarrolladores...</h2>
-      <br>
-      <br>
-      <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Conoce al equipo</button>
-  </section>
-</header>
+        <div class="navbar-collapse collapse text-center" id="navbarsExample06">
+          <a href="#" class="enlace__navegacion nav-item nav-link">Perfil</a>
+          <a href="login.html" class="enlace__navegacion nav-item nav-link"> Iniciar Sesión</a>
+        </div>
+      </nav>
+    <section class="textos-header" style="background-image: url(/assets/img/quienes-somos2.png); height: 500px;" >
+        
+        <h1 class="h1" style="margin-top: 80px; color: #f4f4f2;">Bienvenido al Foro</h1>
+        <br>
+        <h2 class="h2-centrar" style="color: #F4F4F2; font-size: 2rem;">Un lugar donde podrás interactuar con la comunidad</h2>
+        <br>
+        <br>
+    </section>
+  </header>
     <!--Aqui termina el header-->
  
     <div class="container cambio">
-        <div class="ubicacion margen-2"> <a href="#">Inicio</a>
+        <div class="ubicacion margen-2"> <a href="index-general.html">Inicio</a>
              <a href="Foro.html"> > Foro HTML </a> 
-            <span> > Pregunta 1</span></div>
+            <span id="Nav_pregunta"> > Pregunta 1</span></div>
         
         <main class="margen-2">
-            <h2 class="hilo">Pregunta 1</h2>
+            <h2 class="hilo" id="P1">Pregunta 1</h2>
             <!-- Primer Foro -->
             <div class=" card mb-3" style="max-width: 100%;">
                 <div class="row g-0">
                   <div class="col-md-2">
-                    <img src="/assets/img/johnDoe.png" class="img-fluid rounded-start" alt="...">
+                    <img id="imagen_Pregunta" src="/assets/img/johnDoe.png" class="img-fluid rounded-start" alt="...">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                        <h2>Pregunta</h2>
-                      <a href="#"><h3>John Doe</h3></a>
-                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto non mollitia soluta earum, repudiandae quas aut harum odio sapiente nostrum!</p>
+                        <h2 style="font-size: 2rem;" id="Tarjeta_P">Pregunta</h2>
+                      <a style="text-align: left;" href="perfil-usuario.html"><h3>John Doe</h3></a>
+                      <p class="card-text" id="Des_Pregunta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto non mollitia soluta earum, repudiandae quas aut harum odio sapiente nostrum!</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -115,8 +122,8 @@
           <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Proyectos</button>
       </div>
     </div>   
-
      <!--Fin del footer-->
 <!--Aqui termina el footer-->
+<script src="/assets/js/js-foro-Comentar.js"></script>
 </body>
 </html>

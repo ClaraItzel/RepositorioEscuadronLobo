@@ -44,38 +44,61 @@
       </header>
     <!--Aquí termina la barra de navegación-->
     </div>
-        <!-- Seccion para crear foros -->
+         <!-- Seccion para crear foros -->
     <div class="container">
-        <div class="ubicacion margen-2"> <h3>
-          <a href="#"> Inicio</a>
-             <span> > Foro HTML </span> </div>
-        </h3> 
-        <h1>Bienvenido al Foro</h1>
-        <p style="text-align: center;">Aquí podrás publicar tus preguntas, temas de discusión y todo lo referente a HTML, así como interactuar con la comunidad dentro de los hilos</p>
-            <h2 class="hilo">Abre un hilo nuevo</h2>
-            <div class="margen-2 info">
-              <label for="floatingTextarea2">Escribe el titulo de tu pregunta</label>
-              <input type="text" name="Pregunta" id="TPregunta" style="margin-bottom: 2rem;" placeholder="Ej. ¿Que es HTML?"> 
-                <div class="margen-but form-floating">
-                <textarea class="form-control" placeholder="Escribe una breve descripcion" id="DPregunta" style="height: 100px"></textarea>
-                
+      <div class="ubicacion margen-2"> <h3 class="texto-izquierda">
+        <a href="#"> Inicio</a>
+           <span> > Foro HTML </span> </div>
+      </h3> 
+          <h2 class="hilo">Abre un hilo nuevo</h2>
+          <div class="margen-2 info">
+            <label for="floatingTextarea2">Escribe el titulo de tu pregunta</label> 
+            <input type="text" name="Pregunta" id="TPregunta" style="margin-bottom: 2rem;" placeholder="Ej. ¿Que es HTML?"> 
+              <div class="margen-but form-floating">
+                <div class="btn__imagen">
+                  <input class="btn__imagen-file" type="file" id="add-foto" name="imagen" value="imagen" accept="png, .jpeg, .jpg">
+                  <div id="preview">
+
+                  </div>
+                </div>
+              <textarea class="form-control" placeholder="Escribe una breve descripcion" id="DPregunta" style="height: 100px"></textarea>
+              
+          </div>
+          <button type="button" class="boton btn btn-secondary" id="btn_CrearForo" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Añadir</button>
+          </div>
+          <hr>
+          <!-- Seccion para crear foros -->
+          <!--Seccion de busqueda-->
+      <div class="buscar">
+          <div class="busqueda margen-2">
+              <input type="text" name="busqueda" id="busqueda" placeholder="Buscar en este foro"> 
+              <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Buscar</button>
+          </div>
+      </div>
+      <!--Seccion de busqueda-->
+      <main class="margen-2" id="M_hilos">
+          <h2 class="hilo">Foros</h2>
+          <div class="hilos" id="M_hilos">
+              <!-- Primer Foro -->
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-3">
+              <div class="col-md-2">
+                <img src="/assets/img/johnDoe.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <a href="Comentario.html"><h4 class="card-title SinDec texto-izquierda" style="text-decoration: none;">Pregunta</h4></a>
+                  <a href="perfil-usuario.html">John Doe</a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
             </div>
-            <button type="button" class="boton btn btn-secondary" id="btn_CrearForo" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Añadir</button>
-            </div>
-            <hr>
-            <!-- Seccion para crear foros -->
-            <!--Seccion de busqueda-->
-        <div class="buscar">
-            <div class="busqueda margen-2">
-                <input type="text" name="busqueda" id="busqueda" placeholder="Buscar en este foro"> 
-                <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Buscar</button>
-            </div>
-        </div>
-        <!--Seccion de busqueda-->
-        <main class="margen-2" id="M_hilos">
-            <h2 class="hilo">Foros</h2>
-            <div class="hilos" id="M_hilos">
-                <!-- Primer Foro -->
+          </div>
+            
+          <!-- Primer Foro -->
+           <!-- Segundo Foro -->
+           <div class="margen-2 card mb-3" style="max-width: 100%;">
             <div class="card mb-3" style="max-width: 100%;">
               <div class="row g-3">
                 <div class="col-md-2">
@@ -83,18 +106,18 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <a href="Comentario.html"><h4 class="card-title SinDec" style="text-decoration: none;">Pregunta</h4></a>
-                    <a href="#">John Doe</a>
+                    <a href="Comentario.html"><h4 class="card-title SinDec texto-izquierda" style="text-decoration: none;">Pregunta</h4></a>
+                    <a href="perfil-usuario.html">John Doe</a>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
             </div>
-              
-            <!-- Primer Foro -->
-             <!-- Segundo Foro -->
-             <div class="margen-2 card mb-3" style="max-width: 100%;">
+          </div>
+          <!-- Segundo Foro -->
+           <!-- Tercer Foro -->
+              <!-- Segundo Foro -->
               <div class="card mb-3" style="max-width: 100%;">
                 <div class="row g-3">
                   <div class="col-md-2">
@@ -102,40 +125,21 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <a href="Comentario.html"><h4 class="card-title SinDec" style="text-decoration: none;">Pregunta</h4></a>
-                      <a href="#">John Doe</a>
+                      <a href="Comentario.html"><h4 class="card-title SinDec texto-izquierda" style="text-decoration: none;">Pregunta</h4></a>
+                      <a href="perfil-usuario.html">John Doe</a>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Segundo Foro -->
-             <!-- Tercer Foro -->
-                <!-- Segundo Foro -->
-                <div class="card mb-3" style="max-width: 100%;">
-                  <div class="row g-3">
-                    <div class="col-md-2">
-                      <img src="/assets/img/johnDoe.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <a href="Comentario.html"><h4 class="card-title SinDec" style="text-decoration: none;">Pregunta</h4></a>
-                        <a href="#">John Doe</a>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-               
-            <!-- Tercer Foro -->
-            </div>
-            
-                  </main>
+             
+          <!-- Tercer Foro -->
+          </div>
+          
+                </main>
 
-    </div>
+  </div>
     <!--Inicio del footer-->
       
     <div class="jumbotron jumbotron-fluid" style="text-align: center; background-image: url(/assets/img/comunidad.png); margin: 0; height: 250px;">

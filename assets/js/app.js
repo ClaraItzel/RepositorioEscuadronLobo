@@ -4,19 +4,21 @@ const infoPersonal = document.querySelector('#info-perso');
 const viewCv = document.querySelector('#view-cv');
 const info = document.querySelector('#info-personal')
 const cv = document.querySelector('#cv');
+const contact = document.querySelector('#contact')
 const course = document.querySelector('#course');
 const proyects = document.querySelector('#proyects');
 const divParrafo = document.querySelector('#div-parrafo');
 
-var bandera = true;
+// var bandera = true;
 var a = info;
+var b = infoPersonal;
 
 // Funcion EventListyener
 eventListener();
 
 function eventListener() {
 
-    // document.addEventListener('DOMContentLoaded',loaded)
+    document.addEventListener('DOMContentLoaded',loaded)
 
 
     infoPersonal.addEventListener('click', verInformacion);
@@ -34,38 +36,73 @@ function eventListener() {
 
 }
 
+function loaded(){
+    b.style.background = "#13C0E5"
+    b.style.color = "white"
+}
+
+
 // funcion para mostrar informacion Personal
 function verInformacion() {
 
-    if (a != info) {
+    b.style.background = "white"
+    b.style.color = "black"
+    
+    if (a != info && b != infoPersonal) {
         a.style.visibility = 'hidden'
         info.style.visibility = 'visible'
+
+        infoPersonal.style.background = "#13C0E5"
+        infoPersonal.style.color = "white";
+        // infoPersonal.style.boxShadow = "0 0 20px 0.5px black"
+
         bandera = true;
     }
     a = info;
+    b = infoPersonal
 
 }
+
 
 // Mostramos el Cv
 function verCv() {
 
+    b.style.background = "white"
+    b.style.color = "black"
+
     a.style.visibility = 'hidden'
     cv.style.visibility = 'visible';
 
+    viewCv.style.background = "#13C0E5"
+    viewCv.style.color = "white"
+    // viewCv.style.fontSize = "2px"
+    
     a = cv
-
+    b = viewCv
+    
 }
 
 // funcion para ver contacto
 function contacto() {
-
+    
+    b.style.background = "white"
+    b.style.color = "black"
+    
+    
     a.style.visibility = 'hidden'
     info.style.visibility = 'hidden'
 
-    const contacto = document.querySelector('#contacto');
+    contact.style.background = "#13C0E5"
+    contact.style.color = "white"
+    // viewCv.style.fontSize = "2px"
+    
+    
+
+    const contacto = document.querySelector('#div-contacto');
     contacto.style.visibility = 'visible'
 
     a = contacto
+    b = contact
 
 }
 
@@ -73,13 +110,20 @@ function contacto() {
 // Funcion para ver los cursos
 function cursosCert(){
 
+    b.style.background = "white"
+    b.style.color = "black"
+
     a.style.visibility = "hidden";
     info.style.visibility = 'hidden';
+
+    course.style.background = "#13C0E5"
+    course.style.color = "white"
 
     const cursos = document.querySelector('#cursos');
     cursos.style.visibility = "visible"
 
     a = cursos
+    b = course
 
 
 }
@@ -88,16 +132,23 @@ function cursosCert(){
 // Funcion para ver los proyectos
 function viewProyect(){
 
+    b.style.background = "white"
+    b.style.color = "black"
+
     const verProyecto = document.querySelector('.proyects');
 
     console.log(verProyecto); 
 
     a.style.visibility = 'hidden';
     info.style.visibility = 'hidden';
-
     verProyecto.style.visibility = 'visible';
 
+    
+    proyects.style.background = "#13C0E5"
+    proyects.style.color = "white"
+
     a = verProyecto;
+    b = proyects
 
 }
 

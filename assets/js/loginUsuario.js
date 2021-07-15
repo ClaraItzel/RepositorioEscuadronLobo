@@ -7,7 +7,7 @@ const warnings = document.getElementById('warnings');
 
 form.addEventListener('submit', event=>{
     event.preventDefault();
-    let usuarioPrueba = "Usuario";
+    let usuarioPrueba = "Usuario lobo";
     let contraseña = "12345678";
     let entrar = false;
     let mensaje = "";

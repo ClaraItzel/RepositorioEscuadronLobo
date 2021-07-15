@@ -35,8 +35,9 @@
         </button>
       
         <div class="navbar-collapse collapse text-center" id="navbarsExample06">
-          <a href="#" class="enlace__navegacion nav-item nav-link">Perfil</a>
-          <a href="login.html" class="enlace__navegacion nav-item nav-link"> Iniciar Sesión</a>
+          <a href="#" class="enlace__navegacion nav-item nav-link" id="perfilusuario"></a>
+          <a href="login.html" class="enlace__navegacion nav-item nav-link" id="iniciarSesion"> Iniciar Sesión</a>
+          <a href="login.html" class="enlace__navegacion nav-item nav-link" id="cerrarSesion"> Cerrar Sesión</a>
         </div>
       </nav>
         
@@ -217,7 +218,7 @@
 
         <div class="jumbotron jumbotron-fluid" style="text-align: center; background-image: url(/assets/img/comunidad.png); margin-top: 2rem; margin-bottom: 0; height: 250px;">
             <div class="container">
-                <h2 style="text-align: center; color: #F4F4F2 ;">¡Únete a nuestra gran comunidad!</h2>
+                <h2 style="text-align: center; color: #F4F4F2 ;" id="mensajefooter"></h2>
                 <br>
                 <button type="button" id="btn_crearCuenta" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 24px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Crear Cuenta</button>
             </div>
@@ -235,6 +236,7 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
           <script src="/assets/js/principal.js"></script>
+          <script src="assets/js/localStorage.js"></script>
 </body>
 
 </html>

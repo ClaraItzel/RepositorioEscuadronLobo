@@ -21,16 +21,17 @@
                     <div class="col-6" id="der">
 
                         <h1 class="txtAzul mt-4 text-center txtTitulo">Iniciar sesión</h1>
-                        <form action="">
+                        
+                        <form action="" id="form">
 
                             <label for="" class="mt-3 txtAzul txtParrafo">Nombre de usuario o correo electronico:</label>
                             <br>
-                            <input type="text" class="form-control inputs mt-0" id="user"/>
+                            <input type="text" class="form-control inputs mt-0" id="user" required/>
                             <br><br>
 
                             <label for="" class="txtAzul mt-0 txtParrafo">Contraseña:</label>
                             <br>
-                            <input type="password" class="form-control inputs mt-0" id="pass"/>
+                            <input type="password" class="form-control inputs mt-0" id="password" required/>
 
                             <button class="mt-4 terceros text-center btn txtAzul txtParrafo" style=" margin-left: 5.5rem; width: 275px;">
                                 <img src="assets/fonts/google.svg" alt="" width="20" style="margin-right: 2px;"/>
@@ -42,7 +43,7 @@
                             </button>
 
                             <button type="button" onclick="location.href = `registro.html`" class="mt-5 btn btn-azul txtBlanco txtButtonLogin" style="margin-left: 4rem;">Registrarse</button>
-                            <button type="button" class="mt-5 btn btn-azul txtBlanco txtButtonLogin" id="ingresar" style="margin-left: 7rem;">Ingresar</button>
+                            <button type="submit" class="mt-5 btn btn-azul txtBlanco txtButtonLogin" id="ingresar" style="margin-left: 7rem;">Ingresar</button>
 
                             <p class="mt-4 text-center">
                                 <a href="olvidoContrasena.html" class="txtParrafo">¿Olvido su contraseña?</a>

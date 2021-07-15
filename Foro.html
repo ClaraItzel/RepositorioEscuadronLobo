@@ -7,6 +7,8 @@
     <title>Foro</title>
     <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style-foro.css">
+    <link rel="preload" href="/assets/css/style-general.css" as="style">
+    <link rel="stylesheet" href="/assets/css/style-general.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -23,9 +25,12 @@
         <!--Aquí empieza la barra de navegación-->
         <div>
         <nav>
-            <img src="/assets/img/logo.png" align="left">
-            <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 20px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Mi Perfil</button>
-            <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 20px; border-radius: 60px; font-family: 'Cormorant Garamond', serif; margin-left: 15px;" >Cerrar Sesión</button>
+          <img src="/assets/img/logo.png" align="left">
+          <a href="#" class="enlace__navegacion nav-item nav-link" id="perfilusuario"></a>
+          <a href="login.html" class="enlace__navegacion nav-item nav-link" id="iniciarSesion"> Iniciar Sesión</a>
+          <a href="login.html" class="enlace__navegacion nav-item nav-link" id="cerrarSesion"> Cerrar Sesión</a>
+            <!-- <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 20px; border-radius: 60px; font-family: 'Cormorant Garamond', serif;">Mi Perfil</button>
+            <button type="button" class="boton btn btn-secondary" style="color:#F4F4F2; font-size: 20px; border-radius: 60px; font-family: 'Cormorant Garamond', serif; margin-left: 15px;" >Cerrar Sesión</button> -->
         </nav>
         <section class="textos-header" style="background-image: url(/assets/img/quienes-somos2.png); height: 500px;" >
             
@@ -144,6 +149,7 @@
      <!--Fin del footer-->
    
 <script src="/assets/js/js-foro.js"></script>
+<script src="assets/js/localStorage.js"></script>
 
 </body>
 </html>

@@ -16,7 +16,12 @@ if(user != null){
     //Mostramos el nombre del usuario
     perfilUsuario.innerHTML = user[0].usuario;
     //Ocultamos el boton de crear cuenta
-    crearCuenta.style.display = 'none';
+    try {
+        crearCuenta.style.display = 'none';
+    } catch (error) {
+        
+    }
+    
 } 
 // Si no tiene datos el local storage
 else {
@@ -25,6 +30,17 @@ else {
     //Ocultamos el nombre de perfil de usuario
     perfilUsuario.style.display = 'none';
     //Mostramos el mensaje del footer
-    mensajefooter.innerHTML = '¡Únete a nuestra gran comunidad!';
+    try {
+        mensajefooter.innerHTML = '¡Únete a nuestra gran comunidad!';
+    } catch (error) {
+        
+    }
 
 }
+
+//Borramos el local storage
+
+cerrarSesion.addEventListener('click', e => {
+    localStorage.clear();
+    location.href= "login.html";
+});
